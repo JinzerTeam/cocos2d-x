@@ -141,6 +141,11 @@ protected:
 
     void updateFrameSize();
 
+	//-->modified by ks
+	//author:yangjingzhao
+	//expose window event for fs
+public:
+	//--<end
     // GLFW callbacks
     void onGLFWError(int errorID, const char* errorDesc);
     void onGLFWMouseCallBack(GLFWwindow* window, int button, int action, int modify);
@@ -153,6 +158,12 @@ protected:
     void onGLFWWindowSizeFunCallback(GLFWwindow *window, int width, int height);
     void onGLFWWindowIconifyCallback(GLFWwindow* window, int iconified);
     void onGLFWWindowFocusCallback(GLFWwindow* window, int focused);
+	
+	//-->modified by ks
+	//author:yangjingzhao
+	//expose window event for fs
+protected:
+	//--<end
 
     bool _captured;
     bool _supportTouch;
