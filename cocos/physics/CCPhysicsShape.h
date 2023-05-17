@@ -38,7 +38,12 @@ NS_CC_BEGIN
 
 class PhysicsBody;
 
-typedef struct CC_DLL PhysicsMaterial
+//-->modified by ks
+//author:yangjingzhao
+//for compile error in fs
+//typedef struct CC_DLL PhysicsMaterial
+typedef struct PhysicsMaterial
+//--<end
 {
     float density;          ///< The density of the object.
     float restitution;      ///< The bounciness of the physics body.
